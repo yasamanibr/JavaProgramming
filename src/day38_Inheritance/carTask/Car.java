@@ -6,9 +6,9 @@ public class Car {
     public int year;
     public double price;
     public String color;
-    public double miles;
+    public int miles;
 
-    public Car(String brand, String model, int year, double price, String color, double miles) {
+    public Car(String brand, String model, int year, double price, String color, int miles) {
         this.brand = brand;
         this.model = model;
         this.year = year;
@@ -18,14 +18,14 @@ public class Car {
     }
 
     public void start(){
-        System.out.println(model + " " + brand + " is starting");
+        System.out.println(brand + " " + model + " is starting");
     }
 
     public void drive(){
-        System.out.println(model + " " + brand + " is driving " + miles + " miles");
+        System.out.println(brand + " " + model + " is driving");
     }
 
-    @Override
+
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
